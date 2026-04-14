@@ -3,15 +3,15 @@ import React, { useState } from "react";
 import WbeSocket from "ws";
 
 function App() {
-  try {
-    const ws = new WebSocket("ws:localhost:8000");
-    } catch (e) {
-    console.log("Erro no get: ", e);
+  const ws = new WebSocket("ws:localhost:8000");
+  
+  if (!ws){
+    console.log("ERROOOOOOOO 🚫")
   }
 
-  async function vote() {
+  async function vote(voteOption) {
     ws.on('open', function open() {
-    ws.send({ option:  });
+    ws.send({ option: voteOption });
     });
   }
 

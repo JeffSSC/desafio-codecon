@@ -58,9 +58,9 @@
   color: black;
   border-width: 2px;
   border-color: black;
-  width: 4.2rem;
-  height: 2.1rem;
-  transition: all 0.1s ease-in-out;
+  width: 4rem;
+  height: 2rem;
+  transition: all 0.15s ease-in-out;
 }
 
 .tituloH1 {

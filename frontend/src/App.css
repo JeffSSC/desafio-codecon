@@ -28,6 +28,22 @@
   color: #61dafb;
 }
 
+.progresso1{
+  background-color: green;
+}
+
+.progresso2 {
+  background-color: red;
+}
+
+.votar1 {
+  background-color: blue;
+}
+
+.votar2 {
+  background-color: blue;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

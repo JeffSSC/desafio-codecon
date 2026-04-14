@@ -1,35 +1,50 @@
-import './App.css';
-import React, { useState } from 'react';
+import "./App.css";
+import React, { useState } from "react";
+import WbeSocket from "ws";
 
 function App() {
-  async function getVotes() {
-    try {
-
+  try {
+    const ws = new WebSocket("ws:localhost:8000");
     } catch (e) {
-      console.log("Erro no get: ", e);
-    }
+    console.log("Erro no get: ", e);
   }
+
+  async function sendOption() {
+    ws.on('open', function open() {
+    ws.send({ option:  });
+    });
+  }
+
+
+
 
   async function vote(option) {
     try {
-
     } catch (e) {
-      console.log("Erro no post: ", e)
+      console.log("Erro no post: ", e);
     }
   }
 
   return (
-    <body className='body'>
-      <h1 className='tituloH1'>Enquete</h1>
-      <main className='main'>
-        <h2 className='tituloH2'>Opção 1</h2>
+    <body className="body">
+      <h1 className="tituloH1">Enquete</h1>
+      <main className="main">
+        <h2 className="tituloH2">Opção 1</h2>
         {/* <div className='progresso1'>{`${opcao1}`}</div> */}
-        <div className='firstOption'><p className='txt'>y votos</p></div>
-        <button className='voteBtn' onClick={vote("opcao a")}><p className='txt'>Votar</p></button>
-        <h2 className='tituloH2'>Opção 2</h2>
+        <div className="firstOption">
+          <p className="txt">y votos</p>
+        </div>
+        <button className="voteBtn" onClick={vote(1)}>
+          <p className="txt">Votar</p>
+        </button>
+        <h2 className="tituloH2">Opção 2</h2>
         {/* <div className='progresso2'>{`${opcao2}`}</div> */}
-        <div className='secondOption'><p className='txt'>x votos</p></div>
-        <button className='voteBtn' onClick={vote("opcao a")}><p className='txt'>Votar</p></button>
+        <div className="secondOption">
+          <p className="txt">x votos</p>
+        </div>
+        <button className="voteBtn" onClick={vote(2)}>
+          <p className="txt">Votar</p>
+        </button>
       </main>
     </body>
   );

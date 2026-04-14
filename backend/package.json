@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node app.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +21,7 @@
   "homepage": "https://github.com/JeffSSC/desafio-codecon#readme",
   "dependencies": {
     "express": "^5.2.1",
+    "socket.io": "^4.8.3",
     "ws": "^8.20.0"
   }
 }

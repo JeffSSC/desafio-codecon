@@ -47,8 +47,8 @@
   background-color: black;
   color: white;
   margin: 1rem auto;
-  width: 5rem;
-  height: 2.5rem;
+  width: 5.2rem;
+  height: 2.6rem;
   display: flex;
   align-items: center;
 }
@@ -58,8 +58,8 @@
   color: black;
   border-width: 2px;
   border-color: black;
-  width: 4rem;
-  height: 2rem;
+  width: 5.2rem;
+  height: 2.6rem;
   transition: all 0.15s ease-in-out;
 }
 

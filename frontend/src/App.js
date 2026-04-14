@@ -15,16 +15,6 @@ function App() {
     });
   }
 
-
-
-
-  async function vote(option) {
-    try {
-    } catch (e) {
-      console.log("Erro no post: ", e);
-    }
-  }
-
   return (
     <body className="body">
       <h1 className="tituloH1">Enquete</h1>

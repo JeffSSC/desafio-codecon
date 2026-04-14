@@ -9,15 +9,9 @@ const serverSocket = require('socket.io')(http)
 
 const host = "http://localhost"
 
-http.listen(PORTA, () => {
-  const portaStr = PORTA === 80 ? '' :  ':' + PORTA
-  if (process.env.HEROKU_APP_NAME)
-    console.log('Servidor iniciado. Abra o navegador em ' + host)
-
-  else console.log('Servidor iniciado. Abra o navegador em ' + host + portaStr)
+http.listen(8080, () => {
+  console.log('Servidor iniciado. Abra o navegador em ' + host)
 })
-
-app.get('/', (req, res) => res.sendFile(__dirname + '/index.html'))
 
 function receiveUserConnection(socket) {
   socket.on('disconnect', () => console.log('Cliente desconectado: ' + socket.nickname))
@@ -26,7 +20,6 @@ function receiveUserConnection(socket) {
 }
 
 function encaminhaMsgStatus(socket, msg) {
-  console.log(msg)
   socket.broadcast.emit('status', msg)
 }
 

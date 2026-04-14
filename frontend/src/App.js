@@ -9,20 +9,10 @@ function App() {
     console.log("Erro no get: ", e);
   }
 
-  async function sendOption() {
+  async function vote() {
     ws.on('open', function open() {
     ws.send({ option:  });
     });
-  }
-
-
-
-
-  async function vote(option) {
-    try {
-    } catch (e) {
-      console.log("Erro no post: ", e);
-    }
   }
 
   return (

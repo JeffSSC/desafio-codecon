@@ -2,17 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Montserrat';
+}
+
 .firstOption {
   margin: 1rem auto;
   width: 8rem;
   height: 4rem;
-  background-color: green;
+  background-color: lightgreen;
+  border-radius: 2px;
   display: flex;
   align-items: center;
 }
 
 .secondOption {
-  background-color: red;
+  background-color: lightcoral;
+  border-radius: 2px;
   margin: 1rem auto;
   width: 8rem;
   height: 4rem;
@@ -38,6 +53,16 @@
   align-items: center;
 }
 
+.voteBtn:hover {
+  background-color: white;
+  color: black;
+  border-width: 2px;
+  border-color: black;
+  width: 4.2rem;
+  height: 2.1rem;
+  transition: all 0.1s ease-in-out;
+}
+
 .tituloH1 {
   margin: 1rem 0 0 4rem;
   font-size: 2rem;
@@ -49,13 +74,14 @@
   font-size: 1rem;
 }
 
-.body{
+.body {
   background-color: lightgray;
 }
 
 .main {
   background-color: white;
   width: 50%;
+  border-radius: 10px;
   margin: 2rem auto;
   padding-bottom: 1rem;
 }

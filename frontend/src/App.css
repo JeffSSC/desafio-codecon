@@ -1,3 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.firstOption {
+  margin: 1rem auto;
+  width: 8rem;
+  height: 4rem;
+  background-color: green;
+  display: flex;
+  align-items: center;
+}
+
+.secondOption {
+  background-color: red;
+  margin: 1rem auto;
+  width: 8rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.txt {
+  margin: 0 auto;
+}
+
+.voteBtn {
+  background-color: blue;
+  margin: 1rem auto;
+  width: 4rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.tituloH1 {
+  margin: 1rem 0 0 4rem;
+  font-size: 2rem;
+}
+
+.tituloH2 {
+  padding-top: 10px;
+  margin: 1rem;
+  font-size: 1rem;
+}
+
+.main {
+  background-color: gray;
+  width: 50%;
+  margin: 2rem auto;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .App {
   text-align: center;
 }
@@ -26,29 +88,4 @@
 
 .App-link {
   color: #61dafb;
-}
-
-.progresso1{
-  background-color: green;
-}
-
-.progresso2 {
-  background-color: red;
-}
-
-.votar1 {
-  background-color: blue;
-}
-
-.votar2 {
-  background-color: blue;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

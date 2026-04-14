@@ -9,7 +9,7 @@ function App() {
     console.log("Erro no get: ", e);
   }
 
-  async function sendOption() {
+  async function vote() {
     ws.on('open', function open() {
     ws.send({ option:  });
     });

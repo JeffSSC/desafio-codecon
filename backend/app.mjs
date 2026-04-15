@@ -6,7 +6,7 @@ const server = new WebSocketServer({
 });
 
 const poll = {
-  "name": "Enquete ABC",
+  "name": "Enquete ABCD",
   "options": [
     {"name": "Opção A", "votes": []},
     {"name": "Opção B", "votes": []},

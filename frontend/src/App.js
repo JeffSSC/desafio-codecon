@@ -51,14 +51,14 @@ function App() {
           <p className="txt">{`${voteA}`} votos 🎉</p>
         </div>
         <button className="voteBtn" onClick={handleVoteA}>
-          <p className="txt">Votar 🖱️</p>
+          <p className="txt2">Votar 🖱️</p>
         </button>
         <h2 className="tituloH2">Opção B 📍</h2>
         <div className="secondOption">
           <p className="txt">{`${voteB}`} votos 🎉</p>
         </div>
         <button className="voteBtn" onClick={handleVoteB}>
-          <p className="txt">Votar 🖱️</p>
+          <p className="txt2">Votar 🖱️</p>
         </button>
       </main>
     </body>

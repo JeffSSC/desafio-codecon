@@ -37,6 +37,11 @@
   margin: 0 auto;
 }
 
+.txt2 {
+  margin: 0 auto;
+  font-size: 12px;
+}
+
 .main {
   background-color: darkblue;
 }
